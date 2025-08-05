@@ -6,7 +6,7 @@ module.exports = {
         .setDescription('Sends assignments for a specific subject to AI for answering.')
         .addStringOption(option =>
             option.setName('subject')
-                .setDescription('The subject to send assignments for')
+                .setDescription('The subject to send assignments for.')
                 .setRequired(true)),
     async execute(interaction) {
         const subject = interaction.options.getString('subject');

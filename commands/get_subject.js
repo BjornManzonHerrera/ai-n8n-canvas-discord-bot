@@ -6,7 +6,7 @@ module.exports = {
         .setDescription('Fetches assignments for a specific subject.')
         .addStringOption(option =>
             option.setName('subject')
-                .setDescription('The subject to fetch assignments for')
+                .setDescription('The subject to fetch assignments for.')
                 .setRequired(true)),
     async execute(interaction) {
         const subject = interaction.options.getString('subject');
